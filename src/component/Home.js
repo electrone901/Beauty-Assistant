@@ -1,8 +1,75 @@
 import React, { Component } from "react";
 import Footer from "./Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Slide } from "react-slideshow-image";
 
 import "../App.css";
+
+// const slideImages = ["../img/eco.jpg", "../img/eco.jpg", "../img/eco.jpg"];
+
+const properties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  arrows: true,
+  onChange: (oldIndex, newIndex) => {
+    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+  }
+};
+
+const Slideshow = () => {
+  return (
+    <div className="slide-container">
+      <Slide {...properties}>
+        <div className="each-slide">
+          <div>
+            <img class="caro" src={require("../img/feat1.png")} />
+            <br />
+            Aerin
+            <br />
+            Hibiscus Palm
+            <br />
+            $180
+          </div>
+        </div>
+        <div className="each-slide">
+          <img class="caro" src={require("../img/feat2.png")} />
+          <br />
+          GLAMGLOW® SUPERMUD® Clearing Treatment - 0.5 oz.
+          <br />
+          $25
+        </div>
+        <div className="each-slide">
+          <img class="caro" src={require("../img/feat3.png")} />
+          <br />
+          Jo Malone London <br />
+          Pomegranate Noir Cologne
+          <br />
+          $199.00
+        </div>
+        <div className="each-slide">
+          <img class="caro" src={require("../img/feat4.png")} />
+          <br />
+          Clinique
+          <br /> Dramatically Different Moisturizing Lotion+ with Pump, 4.2 oz
+          <br />
+          $28
+        </div>
+        <div className="each-slide">
+          <img class="caro" src={require("../img/feat5.png")} />
+          <br />
+          BECCA
+          <br />
+          Skin Love Weightless Blur Foundation
+          <br />
+          $44
+        </div>
+      </Slide>
+      <br />
+    </div>
+  );
+};
 
 class Home extends Component {
   constructor() {
@@ -47,11 +114,12 @@ class Home extends Component {
         </div>
         <h2 id="featuredItemHeader">Estee Lauder Companies</h2>
         <h3 id="featuredItemText">Breast Cancer Campaign</h3>
-        <img
+        {/* <img
           alt={"Latest Product Raising Awareness"}
           id="featuredItems"
           src={require("../img/featuredItem.jpg")}
-        />
+        /> */}
+        <Slideshow></Slideshow>
         <h4 id="ecoItemHeader">Recommended Eco Friendly Item</h4>
         <h3 id="ecoItemText">Environmental Pack</h3>
         <img id="ecoItems" src={require("../img/eco.jpg")} />
