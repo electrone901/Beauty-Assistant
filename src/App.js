@@ -15,11 +15,11 @@ class App extends Component {
       <Router>
         <div className="App">
           <NavbarC />
-          <nav class="navbar navbar-light bg-light">
-            <form class="form-inline">
+          <nav className="navbar navbar-light bg-light">
+            <form className="form-inline">
               <input
                 id="searchInput"
-                class="form-control mr-sm-2"
+                className="form-control mr-sm-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
