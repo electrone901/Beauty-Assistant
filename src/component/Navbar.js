@@ -10,14 +10,46 @@ class Navbar extends Component {
       user: ''
     };
   }
-
   
   render() {
+    
+    const authLinks = (
+      <ul className="navbar-nav ml-auto">
+        
+        <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <Link to={`/profile/`} className="nav-link">
+            Profile
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/" className="nav-link">
+              Logout
+          </Link>
+        </li>
+      </ul>
+    );
+
+    
+    const guestLinks = (
+      <ul className="navbar-nav ml-auto">
+        <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <Link className="nav-link" to="/register">
+            Sign Up
+          </Link>
+        </li>
+        <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <Link className="nav-link" to="/login">
+            Login
+          </Link>
+        </li>
+      </ul>
+    );
     return (
+
       <nav className="navbar navbar-expand-sm navbar-light btn-light sticky-top">
         <div className="container">
           <Link className="navbar-brand logo" to="/">
-            {/* <img id="logo" src={logo} alt="logo"/> */}
+            {/* <img src={logo} alt="logo"/> */}
             LOGO
           </Link>
 
@@ -33,6 +65,11 @@ class Navbar extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="mobile-nav"> 
+            {/* <ul className="navbar-nav mr-auto">
+              <li className="nav-item nav-link">
+                { guestLinks}
+              </li>
+            </ul> */}
             <ul className="navbar-nav text-right">
 
               <li className="nav-item text-left" data-toggle="collapse" data-target=".navbar-collapse.show">
@@ -41,9 +78,23 @@ class Navbar extends Component {
                 </Link>
               </li>
               <li className="nav-item text-left" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <Link className="nav-link" to="/my-roducts">
-                  My Products
+                <Link className="nav-link" to="/scanner">
+                  Scan 
                 </Link>
+              </li>
+              <li className="nav-item text-left" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <Link className="nav-link" to="/my-products">
+                  My Products 
+                </Link>
+              </li>
+              <li className="nav-item text-left" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <Link className="nav-link" to="/reward-points">
+                  Reward Points
+                </Link>
+              </li>
+
+              <li className="text-left" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <Link to="/addDeal" className="btn btn-primary">Create a post</Link>
               </li>
             </ul>
            
@@ -51,9 +102,53 @@ class Navbar extends Component {
           
         </div>
       </nav>
+
+
+      // <nav className="navbar navbar-expand-sm navbar-light btn-light sticky-top">
+      //   <div className="container">
+      //     <Link className="navbar-brand logo" to="/">
+      //       {/* <img id="logo" src={logo} alt="logo"/> */}
+      //       LOGO
+      //     </Link>
+
+      //     <button
+      //       className="navbar-toggler"
+      //       type="button"
+      //       data-toggle="collapse"
+      //       data-target="#mobile-nav"
+      //       aria-expanded="false" 
+      //       aria-label="Toggle navigation"
+      //     >
+      //       <span className="navbar-toggler-icon"/>
+      //     </button>
+
+      //     <div className="collapse navbar-collapse" id="mobile-nav"> 
+      //       <ul className="navbar-nav text-right">
+
+      //         <li className="nav-item text-left" data-toggle="collapse" data-target=".navbar-collapse.show">
+      //           <Link className="nav-link" to="/">
+      //             Home
+      //           </Link>
+      //         </li>
+      //         <li className="nav-item text-left" data-toggle="collapse" data-target=".navbar-collapse.show">
+      //           <Link className="nav-link" to="/my-roducts">
+      //             My Products
+      //           </Link>
+      //         </li>
+      //       </ul>
+           
+      //     </div>
+          
+      //   </div>
+      // </nav>
+    
+    
     );
   }
 }
 
 export default Navbar;
+
+
+
 
