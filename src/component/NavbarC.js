@@ -1,15 +1,10 @@
 import React, { Component } from "react";
-import { Link, withRouter } from "react-router-dom";
-// import logo from '../img/logoOf.png';
-import logo from "../img/logo.svg";
+import { Link } from "react-router-dom";
+
 
 import {
   Navbar,
   Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button
 } from "react-bootstrap";
 
 class NavbarC extends Component {

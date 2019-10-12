@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class MyProducts extends Component {
+class Footer extends Component {
     constructor() {
         super();
         this.state = {
@@ -13,10 +13,10 @@ class MyProducts extends Component {
 
     render() {
         return(
-            <div className="container">
-                <h1>MyProducts Page</h1>
+            <div className="footer">
+
             </div>
        )
     }
 }
-export default MyProducts;
+export default Footer;

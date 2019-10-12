@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../img/logo.svg';
-import { Link } from 'react-router-dom';
 
 class Disposal extends Component {
     constructor() {

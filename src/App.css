@@ -24,3 +24,9 @@
 #searchInput {
   width: 95vw;
 }
+
+.footer{
+  width: 100%;
+  color: pink;
+  border-top: 2px solid pink;
+}
