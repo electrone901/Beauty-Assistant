@@ -27,15 +27,15 @@ class NavbarC extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link to="/">
+            <div>
               <Link to="/">Explore</Link>
-            </Nav.Link>
-            <Nav.Link to="/about">
+            </div>
+            <div >
               <Link to="/about">About</Link>
-            </Nav.Link>
-            <Nav.Link to="/my-products">
+            </div>
+            <div >
               <Link to="/my-products">My Products</Link>
-            </Nav.Link>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import logo from "../img/logo.svg";
 
 import { Link } from "react-router-dom";
@@ -17,7 +18,7 @@ class Home extends Component {
     return (
       <div className="container">
         <h1>Featured Item Here</h1>
-        <img src="../img/featuredItem.jpg" />
+        <img src={require("../img/featuredItem.jpg")} />
         <h1>Most Eco Friendly Item</h1>
       </div>
     );
