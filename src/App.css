@@ -42,7 +42,6 @@
   text-decoration: line-through;
   width: 85px;
   margin-left: 120px;
-
 }
 
 #ribbon {
@@ -64,7 +63,7 @@
 }
 
 #ecoItemHeader {
-  background: #4aeb3c;
+  background: pink;
   border-radius: 5px;
 }
 
@@ -116,8 +115,16 @@
   font-family: optimaroman;
 }
 
+.buttonContainer .row {
+  border-bottom: 1px solid gray;
+}
+
 .caro {
   display: inline-block;
   text-decoration: line-through;
   width: 85px;
+}
+
+#lastRow {
+  border-width: 0px;
 }

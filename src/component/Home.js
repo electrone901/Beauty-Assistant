@@ -3,6 +3,10 @@ import Footer from "./Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Slide } from "react-slideshow-image";
 
+import logo from "../img/logo.png";
+
+import { Link } from "react-router-dom";
+
 import "../App.css";
 
 // const slideImages = ["../img/eco.jpg", "../img/eco.jpg", "../img/eco.jpg"];
@@ -85,38 +89,47 @@ class Home extends Component {
     return (
       <div className="container">
         <div className="buttonContainer">
-          <div className="row">
-            <div className="col-3">
-              <img
-                id="cameraIcon"
-                class="icon"
-                src={require("../img/camera.png")}
-              />
+          <Link className="nav-link" to="/scanner">
+            <div className="row">
+              <div className="col-3">
+                <img
+                  id="cameraIcon"
+                  class="icon"
+                  src={require("../img/camera.png")}
+                />
+              </div>
+              <div className="col-9">
+                <br />
+                Scan Product For Product Information
+              </div>
             </div>
-            <div className="col-9">
-              <br />
-              Scan Product For Product Information
+          </Link>
+          <Link className="nav-link" to="/scanner">
+            <div className="row">
+              <div className="col-3">
+                <img class="icon" src={require("../img/disposal.png")} />
+              </div>
+              <div className="col-9">
+                <br />
+                Dispose Makeup Container
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-3">
-              <img class="icon" src={require("../img/disposal.png")} />
+          </Link>
+          <Link className="nav-link" to="/my-products">
+            <div id="lastRow" className="row">
+              <div className="col-3">
+                <img
+                  id="analyticsIcon"
+                  class="icon"
+                  src={require("../img/analytics.png")}
+                />
+              </div>
+              <div className="col-9">
+                <br />
+                My Analytics
+              </div>
             </div>
-            <div className="col-9">
-              <br />
-              Dispose Makeup Container
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-3">
-              <img
-                id="analyticsIcon"
-                class="icon"
-                src={require("../img/analytics.png")}
-              />
-            </div>
-            <div className="col-9"><br/>My Analytics</div>
-          </div>
+          </Link>
         </div>
         <h2 id="featuredItemHeader">Estee Lauder Companies</h2>
         <h3 id="featuredItemText">Breast Cancer Campaign</h3>
@@ -126,7 +139,10 @@ class Home extends Component {
           src={require("../img/featuredItem.jpg")}
         /> */}
         <Slideshow></Slideshow>
-        <h4 id="ecoItemHeader">Recommended Eco Friendly Item</h4>
+        <h4 id="ecoItemHeader">
+          Recommended Eco Friendly Item
+          <img src={logo} id="logoImg" alt="logo" />
+        </h4>
         <h3 id="ecoItemText">Environmental Pack</h3>
         <img id="ecoItems" src={require("../img/eco.jpg")} />
         <br />
