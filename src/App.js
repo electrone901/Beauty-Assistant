@@ -6,6 +6,8 @@ import ProductInfo from "./component/ProductInfo";
 import Disposal from "./component/Disposal";
 import MyProducts from "./component/MyProducts";
 import RewardPoints from "./component/RewardPoints";
+import About from "./component/About";
+import "./App.css";
 
 class App extends Component {
   render() {
@@ -13,6 +15,17 @@ class App extends Component {
       <Router>
         <div className="App">
           <NavbarC />
+          <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input
+                id="searchInput"
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </nav>
           <div>
             <Switch>
               <Route exact path="/" component={Home} />
@@ -20,6 +33,7 @@ class App extends Component {
               <Route exact path="/my-products" component={MyProducts} />
               <Route exact path="/reward-points" component={RewardPoints} />
               <Route exact path="/disposal" component={Disposal} />
+              <Route exact path="/about" component={About} />
             </Switch>
           </div>
         </div>
