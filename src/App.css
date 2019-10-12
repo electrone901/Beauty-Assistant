@@ -22,7 +22,7 @@
 }
 
 #searchInput {
-  width: 95vw;
+  width: 90vw;
 }
 
 /*Footer Component*/
@@ -51,14 +51,17 @@
 #featuredItemHeader {
   background: pink;
   font-family: optimaroman;
+  border-radius: 5px;
 }
 
 #ecoItemHeader {
-  background: #09d3ac;
+  background: #4aeb3c;
+  border-radius: 5px;
 }
 
 #featuredItemText,
-#ecoItemHeader {
+#ecoItemHeader,
+#ecoItemText {
   font-family: optimaroman;
 }
 
@@ -78,4 +81,8 @@
 
 #logoImg {
   width: 40px;
+}
+
+#featuredItems {
+  padding-bottom: 40px;
 }

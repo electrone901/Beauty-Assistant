@@ -23,7 +23,8 @@ class Home extends Component {
           id="featuredItems"
           src={require("../img/featuredItem.jpg")}
         />
-        <h1 id="ecoItemHeader">Most Eco Friendly Item</h1>
+        <h2 id="ecoItemHeader">Most Eco Friendly Item</h2>
+        <h3 id="ecoItemText">Environmental Pack</h3>
         <img id="ecoItems" src={require("../img/eco.jpg")} />
         <Footer />
       </div>
