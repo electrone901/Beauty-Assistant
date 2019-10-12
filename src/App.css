@@ -22,7 +22,7 @@
 }
 
 #searchInput {
-  width: 95vw;
+  width: 90vw;
 }
 
 /*Footer Component*/
@@ -51,17 +51,25 @@
 #featuredItemHeader {
   background: pink;
   font-family: optimaroman;
+  border-radius: 5px;
 }
 
 #ecoItemHeader {
-  background: #09d3ac;
+  background: #4aeb3c;
+  border-radius: 5px;
 }
 
 #featuredItemText,
-#ecoItemHeader {
+#ecoItemHeader,
+#ecoItemText {
   font-family: optimaroman;
 }
-
+.highLight{
+  border: 3px solid red;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  
+}
 #featuredItems,
 #ecoItems {
   width: 50% !important;
@@ -78,4 +86,19 @@
 
 #logoImg {
   width: 40px;
+}
+
+#featuredItems {
+  padding-bottom: 40px;
+}
+
+/* Product Page*/
+.fixedwidth{
+  height: 200px;
+  width: 240px;
+  object-fit: contain;
+}
+
+.middle{
+  margin: 0 auto;
 }

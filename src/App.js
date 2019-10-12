@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Home from "./component/Home";
+import axios from 'axios';
 import About from "./component/About";
 import ProductInfo from "./component/ProductInfo";
 import Disposal from "./component/Disposal";
@@ -12,7 +13,36 @@ import QrReaderComponet from "./component/QrReaderComponet";
 import "./fonts-latest.css";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = { Transaction: [] };
+    this.getUserTransaction = this.getUserTransaction.bind(this);
+    this.getTransaction = this.getTransaction.bind(this);
+  }
+
+  getUserTransaction() {
+     axios.get("https://hack-14.herokuapp.com/transaction").then(result => {
+       console.log(result.data.data);
+       if (result) this.setState({ Transaction: result.data.data });
+     })
+
+     .then((result)=>{
+        if(result) this.setState({Transaction: result.data});
+     })
+
+  }
+
+
+
+  getTransaction() {
+    return this.state.Transaction;
+  }
+
+  componentDidMount() {
+    this.getUserTransaction();
+  }
   render() {
+    console.log("d", this.state.Transaction);
     return (
       <Router>
         <div className="App">
@@ -30,13 +60,31 @@ class App extends Component {
           </nav>
           <div>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/scanner" component={QrReaderComponet} />
-              <Route exact path="/product-info/:id" component={ProductInfo} />
-              <Route exact path="/my-products" component={MyProducts} />
-              <Route exact path="/reward-points" component={RewardPoints} />
-              <Route exact path="/disposal" component={Disposal} />
-              <Route exact path="/about" component={About} />
+              <Route exact path="/" render={() => <Home />} />
+              <Route
+                exact
+                path="/scanner"
+                render={() => <QrReaderComponet />}
+              />
+              <Route
+                exact
+                path="/product-info/:id"
+                render={() => <ProductInfo />}
+              />
+              <Route
+                exact
+                path="/my-products"
+                render={() => (
+                  <MyProducts getTransaction={this.getTransaction} />
+                )}
+              />
+              <Route
+                exact
+                path="/reward-points"
+                render={() => <RewardPoints />}
+              />
+              <Route exact path="/disposal" render={() => <Disposal />} />
+              <Route exact path="/about" render={() => <About />} />
             </Switch>
           </div>
         </div>
