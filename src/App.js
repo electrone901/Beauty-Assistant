@@ -28,13 +28,27 @@ class App extends Component {
           </nav>
           <div>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/scanner" component={QrReaderComponet} />
-              <Route exact path="/product-info/:id" component={ProductInfo} />
-              <Route exact path="/my-products" component={MyProducts} />
-              <Route exact path="/reward-points" component={RewardPoints} />
-              <Route exact path="/disposal" component={Disposal} />
-              <Route exact path="/about" component={About} />
+              <Route exact path="/" render = {() =>{
+                <Home/>
+              }} />
+              <Route exact path="/scanner" render ={()=>{
+                <QrReaderComponet/>
+              }}/>
+              <Route exact path="/product-info/:id" render={()=>{
+                <ProductInfo/>
+              }} />
+              <Route exact path="/my-products" render ={()=>{
+                <MyProducts/>
+              }} />
+              <Route exact path="/reward-points" render = {()=>{
+                <RewardPoints/>
+              }} />
+              <Route exact path="/disposal" render = {()=>{
+                <Disposal/>
+              }} />
+              <Route exact path="/about" render = {()=>{
+                <About/>
+              }} />
             </Switch>
           </div>
         </div>
