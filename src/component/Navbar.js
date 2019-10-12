@@ -92,10 +92,6 @@ class Navbar extends Component {
                   Reward Points
                 </Link>
               </li>
-
-              <li className="text-left" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <Link to="/addDeal" className="btn btn-primary">Create a post</Link>
-              </li>
             </ul>
            
           </div>
