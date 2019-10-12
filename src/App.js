@@ -13,30 +13,47 @@ import QrReaderComponet from "./component/QrReaderComponet";
 import "./fonts-latest.css";
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
-    this.state = {Transaction : []}
+    this.state = { Transaction: [] };
     this.getUserTransaction = this.getUserTransaction.bind(this);
     this.getTransaction = this.getTransaction.bind(this);
   }
 
-  getUserTransaction (){
-    axios.get('https://hack-14.herokuapp.com/transaction')
-    .then((result)=>{
-      console.log(result.data.data)
-      if(result)
-        this.setState({Transaction: result.data.data});
-    })
+  getUserTransaction() {
+    // axios.get("https://hack-14.herokuapp.com/transaction").then(result => {
+    //   console.log(result.data.data);
+    //   if (result) this.setState({ Transaction: result.data.data });
+    // });
+
+    //
+
+    let url = `https://hack-14.herokuapp.com/transaction`;
+    fetch(url)
+      .then(res => {
+        console.log("res YAY", res);
+        return res.json();
+      })
+      .then(data => {
+        console.log("this", data);
+        this.setState({ Transaction: data.data.data });
+      })
+      .catch(err => {
+        console.log(
+          "There was a problem with your fetch request" + err.message
+        );
+      });
   }
 
-  getTransaction (){
+  getTransaction() {
     return this.state.Transaction;
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.getUserTransaction();
   }
   render() {
+    console.log("d", this.state.Transaction);
     return (
       <Router>
         <div className="App">
@@ -54,27 +71,31 @@ class App extends Component {
           </nav>
           <div>
             <Switch>
-              <Route exact path="/" render = {() =>
-                <Home/>
-              } />
-              <Route exact path="/scanner" render ={()=>
-                <QrReaderComponet/>
-              }/>
-              <Route exact path="/product-info/:id" render={()=>
-                <ProductInfo/>
-              } />
-              <Route exact path="/my-products" render ={()=>
-                <MyProducts getTransaction={this.getTransaction}/>
-              } />
-              <Route exact path="/reward-points" render = {()=>
-                <RewardPoints/>
-              } />
-              <Route exact path="/disposal" render = {()=>
-                <Disposal/>
-              } />
-              <Route exact path="/about" render = {()=>
-                <About/>
-              } />
+              <Route exact path="/" render={() => <Home />} />
+              <Route
+                exact
+                path="/scanner"
+                render={() => <QrReaderComponet />}
+              />
+              <Route
+                exact
+                path="/product-info/:id"
+                render={() => <ProductInfo />}
+              />
+              <Route
+                exact
+                path="/my-products"
+                render={() => (
+                  <MyProducts getTransaction={this.getTransaction} />
+                )}
+              />
+              <Route
+                exact
+                path="/reward-points"
+                render={() => <RewardPoints />}
+              />
+              <Route exact path="/disposal" render={() => <Disposal />} />
+              <Route exact path="/about" render={() => <About />} />
             </Switch>
           </div>
         </div>
