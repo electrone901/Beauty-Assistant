@@ -112,7 +112,7 @@ class MyProducts extends Component {
                    <div className ="product-list" key={i}>
                         <div className ="middle fixedwidth">{result.name}</div>
                         <img className ="middle fixedwidth" src={require(`../img/PID${result.pid}.jpg`)} onClick={this.showDetails}/>
-                        <div className ="middle fixedwidth"> Approximate Expiration: {result.exp}</div>
+                        <div className ="highLight middle fixedwidth"> Approximate Exp: <div> {result.exp.toString().substring(0, 10)}</div></div>
                     </div>);
                 })}</div>
                 {

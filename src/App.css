@@ -64,7 +64,12 @@
 #ecoItemText {
   font-family: optimaroman;
 }
-
+.highLight{
+  border: 3px solid red;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  
+}
 #featuredItems,
 #ecoItems {
   width: 50% !important;
