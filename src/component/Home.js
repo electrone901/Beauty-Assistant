@@ -16,7 +16,8 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-        <h1 id="featuredItemHeader">Featured Item Here</h1>
+        <h1 id="featuredItemHeader">Featured Item</h1>
+        <h3 id="featuredItemText">Moisturizing Lotion</h3>
         <img
           alt={"Latest Product Raising Awareness"}
           className="img-fluid"

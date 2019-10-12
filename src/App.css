@@ -43,9 +43,18 @@
   width: 85px;
 }
 
-#featuredItemHeader {
+/* #featuredItemHeader {
   background: red;
   font-family: "notosans-light", sans-serif;
+} */
+
+#featuredItemHeader {
+  background: pink;
+  font-family: optimaroman;
+}
+
+#featuredItemText {
+  font-family: optimaroman;
 }
 
 #featuredItems,
