@@ -13,8 +13,9 @@ class Footer extends Component {
 
     render() {
         return(
-            <div className="footer">
-
+            <div className="container-footer">
+                <div className="footer"> </div>
+                <img className = "breast-size" alt ={"Breast Cancer Ribbon"} src = {require("../img/ribbon.jpg")}/>
             </div>
        )
     }
