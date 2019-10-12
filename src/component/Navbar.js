@@ -3,6 +3,8 @@ import { Link, withRouter } from "react-router-dom";
 // import logo from '../img/logoOf.png';
 import logo from "../img/logo.png";
 
+import "../App.css";
+
 class Navbar extends Component {
   constructor() {
     super();
@@ -60,7 +62,11 @@ class Navbar extends Component {
             <img src={logo} id="logoImg" alt="logo" />
             {/* LOGO */}
           </Link>
-
+          <img
+            className="breast-size"
+            alt={"Breast Cancer Ribbon"}
+            src={require("../img/ribbon1.png")}
+          />
           <button
             className="navbar-toggler"
             type="button"
@@ -113,6 +119,15 @@ class Navbar extends Component {
               >
                 <Link className="nav-link" to="/reward-points">
                   Reward Points
+                </Link>
+              </li>
+              <li
+                className="nav-item text-left"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+              >
+                <Link className="nav-link" to="/Login">
+                  Login
                 </Link>
               </li>
             </ul>

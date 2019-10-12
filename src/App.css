@@ -41,6 +41,7 @@
   display: inline-block;
   text-decoration: line-through;
   width: 85px;
+  margin-left: 120px;
 }
 
 /* #featuredItemHeader {
@@ -85,4 +86,24 @@
 
 #featuredItems {
   padding-bottom: 40px;
+}
+
+.navbar {
+  background: pink !important;
+}
+
+.icon {
+  width: 100px;
+}
+
+#analyticsIcon {
+  width: 120px;
+}
+
+#cameraIcon {
+  width: 85px;
+}
+
+.buttonContainer .col-9 {
+  font-family: optimaroman;
 }

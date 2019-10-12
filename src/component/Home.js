@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Footer from "./Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "../App.css";
 
@@ -16,16 +17,46 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-        <h1 id="featuredItemHeader">Featured Item</h1>
-        <h3 id="featuredItemText">Moisturizing Lotion</h3>
+        <div className="buttonContainer">
+          <div className="row">
+            <div className="col-3">
+              <img
+                id="cameraIcon"
+                class="icon"
+                src={require("../img/camera.png")}
+              />
+            </div>
+            <div className="col-9">Scan Product For Product Information</div>
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <img class="icon" src={require("../img/disposal.png")} />
+            </div>
+            <div className="col-9">Dispose Makeup Container</div>
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <img
+                id="analyticsIcon"
+                class="icon"
+                src={require("../img/analytics.png")}
+              />
+            </div>
+            <div className="col-9">My Analytics</div>
+          </div>
+        </div>
+        <h2 id="featuredItemHeader">Estee Lauder Companies</h2>
+        <h3 id="featuredItemText">Breast Cancer Campaign</h3>
         <img
           alt={"Latest Product Raising Awareness"}
           id="featuredItems"
           src={require("../img/featuredItem.jpg")}
         />
-        <h2 id="ecoItemHeader">Most Eco Friendly Item</h2>
+        <h4 id="ecoItemHeader">Recommended Eco Friendly Item</h4>
         <h3 id="ecoItemText">Environmental Pack</h3>
         <img id="ecoItems" src={require("../img/eco.jpg")} />
+        <br />
+        <a href="#buy-now">Buy Now</a>
         <Footer />
       </div>
 
