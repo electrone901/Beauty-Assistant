@@ -86,3 +86,14 @@
 #featuredItems {
   padding-bottom: 40px;
 }
+
+/* Product Page*/
+.fixedwidth{
+  height: 200px;
+  width: 240px;
+  object-fit: contain;
+}
+
+.middle{
+  margin: 0 auto;
+}

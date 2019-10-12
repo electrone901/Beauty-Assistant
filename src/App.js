@@ -21,29 +21,18 @@ class App extends Component {
   }
 
   getUserTransaction() {
-    // axios.get("https://hack-14.herokuapp.com/transaction").then(result => {
-    //   console.log(result.data.data);
-    //   if (result) this.setState({ Transaction: result.data.data });
-    // });
+     axios.get("https://hack-14.herokuapp.com/transaction").then(result => {
+       console.log(result.data.data);
+       if (result) this.setState({ Transaction: result.data.data });
+     })
 
-    //
+     .then((result)=>{
+        if(result) this.setState({Transaction: result.data});
+     })
 
-    let url = `https://hack-14.herokuapp.com/transaction`;
-    fetch(url)
-      .then(res => {
-        console.log("res YAY", res);
-        return res.json();
-      })
-      .then(data => {
-        console.log("this", data);
-        this.setState({ Transaction: data.data.data });
-      })
-      .catch(err => {
-        console.log(
-          "There was a problem with your fetch request" + err.message
-        );
-      });
   }
+
+
 
   getTransaction() {
     return this.state.Transaction;

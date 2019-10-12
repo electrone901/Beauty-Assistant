@@ -108,8 +108,12 @@ class MyProducts extends Component {
                     <button type="button" onClick={this.getFavoritesDeals.bind(this)} className="btn btn-outline-secondary btn-sm">Previous </button>
                 </div>
                 <div>{this.props.getTransaction().map((result,i)=>{
-                   return( <div key={i}>
-                        <span>{result.name}</span></div>);
+                   return( 
+                   <div className ="product-list" key={i}>
+                        <div className ="middle fixedwidth">{result.name}</div>
+                        <img className ="middle fixedwidth" src={require(`../img/PID${result.pid}.jpg`)} onClick={this.showDetails}/>
+                        <div className ="middle fixedwidth"> Approximate Expiration: {result.exp}</div>
+                    </div>);
                 })}</div>
                 {
                     this.state.previewPost ? preview: ""
