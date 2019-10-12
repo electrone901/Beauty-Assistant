@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=29e8fcee-b439-4532-905b-0b78e79500d1");
+	@font-face{
+        font-family:"notosans-light";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/notosans-light.ttf") format("truetype")
+    }
+    @font-face{
+        font-family:"notosans-lightitalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/notosans-lightitalic.ttf") format("truetype")
+    }
+    @font-face{
+        font-family:"optimaRoman";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-roman-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaRoman";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-roman-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-roman-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-roman-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-roman-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-roman-ttf.ttf") format("truetype");
+font-weight: 400;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"optimaItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-italic-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-italic-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-italic-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-italic-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-italic-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-italic-ttf.ttf") format("truetype");
+font-weight: 400;
+font-style: italic;
+    }
+    @font-face{
+        font-family:"optimaMedium";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaMedium";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-ttf.ttf") format("truetype");
+font-weight: 500;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"optimaMediumItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-italic-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaMediumItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-italic-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-italic-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-italic-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-italic-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-medium-italic-ttf.ttf") format("truetype");
+font-weight: 500;
+font-style: italic;
+    }
+    @font-face{
+        font-family:"optimaSemiBold";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaSemiBold";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-ttf.ttf") format("truetype");
+font-weight: 600;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"optimaSemiBoldItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-italic-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaSemiBoldItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-italic-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-italic-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-italic-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-italic-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-semi-bold-italic-ttf.ttf") format("truetype");
+font-weight: 600;
+font-style: italic;
+    }
+    @font-face{
+        font-family:"optimaBold";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaBold";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-ttf.ttf") format("truetype");
+font-weight: 700;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"optimaBoldItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-italic-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaBoldItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-italic-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-italic-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-italic-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-italic-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-bold-italic-ttf.ttf") format("truetype");
+font-weight: 700;
+font-style: italic;
+    }
+    @font-face{
+        font-family:"optimaBlack";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaBlack";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-ttf.ttf") format("truetype");
+font-weight: 750;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"optimaBlackItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-italic-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaBlackItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-italic-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-italic-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-italic-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-italic-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-black-italic-ttf.ttf") format("truetype");
+font-weight: 750;
+font-style: italic;
+    }
+    @font-face{
+        font-family:"optimaExtraBlack";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaExtraBlack";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-ttf.ttf") format("truetype");
+font-weight: 950;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"optimaExtraBlackItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-italic-eot.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"optimaExtraBlackItalic";
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-italic-eot.eot?#iefix");
+        src:url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-italic-eot.eot?#iefix") format("eot"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-italic-woff2.woff2") format("woff2"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-italic-woff.woff") format("woff"),
+		url("https://media.elcompanies.com/files/e/estee-lauder-companies/universal/fonts-latest/optima-extra-black-italic-ttf.ttf") format("truetype");
+font-weight: 950;
+font-style: italic;
+    }

@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
-import Navbar from './component/Navbar';
-import Home from './component/Home';
-import About from './component/About';
-import ProductInfo from './component/ProductInfo';
-import Disposal from './component/Disposal';
-import MyProducts from './component/MyProducts';
-import RewardPoints from './component/RewardPoints';
-import QrReaderComponet from './component/QrReaderComponet';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./component/Navbar";
+import Home from "./component/Home";
+import About from "./component/About";
+import ProductInfo from "./component/ProductInfo";
+import Disposal from "./component/Disposal";
+import MyProducts from "./component/MyProducts";
+import RewardPoints from "./component/RewardPoints";
+import QrReaderComponet from "./component/QrReaderComponet";
+
+import "./fonts-latest.css";
 
 class App extends Component {
   render() {
