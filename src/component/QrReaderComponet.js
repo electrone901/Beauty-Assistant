@@ -16,11 +16,6 @@ class QrReaderComponet extends Component {
   handleScan = data => {
     let pid = data;
     console.log("pid", pid);
-    
-
-
-
-
     if (data) {
        this.setState({
         confirmationImg: true
