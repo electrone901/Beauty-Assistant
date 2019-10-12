@@ -72,11 +72,10 @@
 #ecoItemText {
   font-family: optimaroman;
 }
-.highLight{
+.highLight {
   border: 3px solid red;
   margin-bottom: 0;
   padding-bottom: 0;
-  
 }
 #featuredItems,
 #ecoItems {
@@ -100,8 +99,7 @@
   padding-bottom: 40px;
 }
 
-<<<<<<< HEAD
-.navbar {
+<<<<<<< head .navbar {
   background: pink !important;
 }
 
@@ -134,15 +132,14 @@
 #lastRow {
   border-width: 0px;
 }
-=======
+
 /* Product Page*/
-.fixedwidth{
+.fixedwidth {
   height: 200px;
   width: 240px;
   object-fit: contain;
 }
 
-.middle{
+.middle {
   margin: 0 auto;
 }
->>>>>>> master
