@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
+import Navbar from './component/Navbar';
+import Home from './component/Home';
+import ProductInfo from './component/ProductInfo';
+import Disposal from './component/Disposal';
+import MyProducts from './component/MyProducts';
+import RewardPoints from './component/RewardPoints';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return(
+      <Router>
+        <div className="App">
+          <Navbar />
+          <div>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/product-info" component={ProductInfo} />
+              <Route exact path="/my-products" component={MyProducts} />
+              <Route exact path="/reward-points" component={RewardPoints} />
+              <Route exact path="/disposal" component={Disposal} />
+            </Switch>
+          </div>
+        </div>
+      </Router>
+    )
+  }
 }
-
 export default App;
