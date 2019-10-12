@@ -23,7 +23,8 @@ class Home extends Component {
           id="featuredItems"
           src={require("../img/featuredItem.jpg")}
         />
-        <h1>Most Eco Friendly Item</h1>
+        <h1 id="ecoItemHeader">Most Eco Friendly Item</h1>
+        <img id="ecoItems" src={require("../img/eco.jpg")} />
         <Footer />
       </div>
 
@@ -36,13 +37,6 @@ class Home extends Component {
       // Featured Item of <br />
       // <span id="bcm">Breast Cancer Month</span>
       // </h3>
-
-      // <img
-      // id="ecoItems"
-      // className="img-fluid"
-      // src={require("../img/eco.jpg")}
-      // />
-      // <h3 id="ecoText">Most Eco Friendly Item</h3>
     );
   }
 }

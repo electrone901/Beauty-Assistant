@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "../App.css";
+
 class Footer extends Component {
   constructor() {
     super();
@@ -16,7 +18,6 @@ class Footer extends Component {
         <div className="footer"> </div>
         <img
           className="breast-size"
-          className="img-fluid"
           alt={"Breast Cancer Ribbon"}
           src={require("../img/ribbon.jpg")}
         />

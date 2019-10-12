@@ -53,7 +53,12 @@
   font-family: optimaroman;
 }
 
-#featuredItemText {
+#ecoItemHeader {
+  background: #09d3ac;
+}
+
+#featuredItemText,
+#ecoItemHeader {
   font-family: optimaroman;
 }
 
