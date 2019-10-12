@@ -104,9 +104,13 @@ class MyProducts extends Component {
                 <h3>My Products</h3>
 
                 <div className="text-center">
-                    <button type="button" onClick={this.getFavoritesDeals.bind(this)}  class="btn btn-outline-secondary btn-sm">Pending </button>
-                    <button type="button" onClick={this.getFavoritesDeals.bind(this)} class="btn btn-outline-secondary btn-sm">Previous </button>
+                    <button type="button" onClick={this.getFavoritesDeals.bind(this)}  className="btn btn-outline-secondary btn-sm">Pending </button>
+                    <button type="button" onClick={this.getFavoritesDeals.bind(this)} className="btn btn-outline-secondary btn-sm">Previous </button>
                 </div>
+                <div>{this.props.getTransaction().map((result,i)=>{
+                   return( <div key={i}>
+                        <span>{result.name}</span></div>);
+                })}</div>
                 {
                     this.state.previewPost ? preview: ""
                     
