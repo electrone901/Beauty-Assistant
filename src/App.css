@@ -26,19 +26,56 @@
 }
 
 /*Footer Component*/
-.footer{
+.footer {
   display: inline;
   width: 100%;
   color: pink;
   border-top: 2px solid pink;
 }
 
-.container-footer{
+.container-footer {
   display: inline-block;
   width: 100%;
 }
-.breast-size{
+.breast-size {
   display: inline-block;
   text-decoration: line-through;
   width: 85px;
+}
+
+/* #featuredItemHeader {
+  background: red;
+  font-family: "notosans-light", sans-serif;
+} */
+
+#featuredItemHeader {
+  background: pink;
+  font-family: optimaroman;
+}
+
+#ecoItemHeader {
+  background: #09d3ac;
+}
+
+#featuredItemText,
+#ecoItemHeader {
+  font-family: optimaroman;
+}
+
+#featuredItems,
+#ecoItems {
+  width: 50% !important;
+}
+
+#featuredText {
+  background: pink;
+}
+
+#bcm {
+  font-size: 26px;
+  color: white;
+}
+
+#logoImg {
+  width: 40px;
 }

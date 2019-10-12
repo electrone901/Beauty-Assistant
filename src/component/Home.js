@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Footer from './Footer';
+import Footer from "./Footer";
 
-
+import "../App.css";
 
 class Home extends Component {
   constructor() {
@@ -16,11 +16,27 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Featured Item Here</h1>
-        <img alt={"Latest Product Raising Awareness"} src={require("../img/featuredItem.jpg")} />
-        <h1>Most Eco Friendly Item</h1>
-        <Footer/>
+        <h1 id="featuredItemHeader">Featured Item</h1>
+        <h3 id="featuredItemText">Moisturizing Lotion</h3>
+        <img
+          alt={"Latest Product Raising Awareness"}
+          id="featuredItems"
+          src={require("../img/featuredItem.jpg")}
+        />
+        <h1 id="ecoItemHeader">Most Eco Friendly Item</h1>
+        <img id="ecoItems" src={require("../img/eco.jpg")} />
+        <Footer />
       </div>
+
+      // <img
+      // id="featuredItems"
+      // className="img-fluid"
+      // src={require("../img/featuredItem.jpg")}
+      // />
+      // <h3 id="featuredText">
+      // Featured Item of <br />
+      // <span id="bcm">Breast Cancer Month</span>
+      // </h3>
     );
   }
 }
