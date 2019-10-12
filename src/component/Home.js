@@ -20,7 +20,7 @@ class Home extends Component {
         <h3 id="featuredItemText">Moisturizing Lotion</h3>
         <img
           alt={"Latest Product Raising Awareness"}
-          className="img-fluid"
+          id="featuredItems"
           src={require("../img/featuredItem.jpg")}
         />
         <h1>Most Eco Friendly Item</h1>
