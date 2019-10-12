@@ -16,11 +16,6 @@ class QrReaderComponet extends Component {
   handleScan = data => {
     let pid = data;
     console.log("pid", pid);
-    
-
-
-
-
     if (data) {
        this.setState({
         confirmationImg: true
@@ -32,22 +27,22 @@ class QrReaderComponet extends Component {
         }.bind(this),
         1000
       )
-      
+      // let url = `https://hack-14.herokuapp.com/getProducts`;
 
-      
+     
       // api call 
-      let url = `https://cnycserver.herokuapp.com/items/${pid}`;
-      fetch(url)
-      .then(res => {
-        console.log('res YAY', res);
-        return res.json();
-      })
-      .then((data) => {
-          this.setState({data: data});
-      })
-      .catch((err) => {
-          console.log('There was a problem with your fetch request' + err.message);
-      });
+      // let url = `https://hack-14.herokuapp.com/getByID/${pid}`;
+      // fetch(url)
+      // .then(res => {
+      //   console.log('res YAY', res);
+      //   return res.json();
+      // })
+      // .then((data) => {
+      //     this.setState({data: data});
+      // })
+      // .catch((err) => {
+      //     console.log('There was a problem with your fetch request' + err.message);
+      // });
 
       // this.setState({
       //   result: data,
@@ -60,13 +55,26 @@ class QrReaderComponet extends Component {
 
 
 
-  componentDidMount() {
+  // componentDidMount() {
+  //   let url = `https://hack-14.herokuapp.com/getProducts`;
+  //     fetch(url)
+  //     .then(res => {
+  //       console.log('res YAY', res);
+  //       return res.json();
+  //     })
+  //     .then((data) => {
+  //         this.setState({data: data});
+  //     })
+  //     .catch((err) => {
+  //         console.log('There was a problem with your fetch request' + err.message);
+  //     });
     
-  }
+  // }
   handleError = err => {
     console.error(err);
   }
   render() {
+    console.log("data", this.state.data)
     return (
       <div className="container">
         <br/><br/>

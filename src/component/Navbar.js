@@ -115,6 +115,15 @@ class Navbar extends Component {
                   Reward Points
                 </Link>
               </li>
+              <li
+                className="nav-item text-left"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+              >
+                <Link className="nav-link" to="/analytic">
+                  Personal Analytic
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
