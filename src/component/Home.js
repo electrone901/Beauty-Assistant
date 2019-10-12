@@ -93,13 +93,19 @@ class Home extends Component {
                 src={require("../img/camera.png")}
               />
             </div>
-            <div className="col-9">Scan Product For Product Information</div>
+            <div className="col-9">
+              <br />
+              Scan Product For Product Information
+            </div>
           </div>
           <div className="row">
             <div className="col-3">
               <img class="icon" src={require("../img/disposal.png")} />
             </div>
-            <div className="col-9">Dispose Makeup Container</div>
+            <div className="col-9">
+              <br />
+              Dispose Makeup Container
+            </div>
           </div>
           <div className="row">
             <div className="col-3">
@@ -109,7 +115,7 @@ class Home extends Component {
                 src={require("../img/analytics.png")}
               />
             </div>
-            <div className="col-9">My Analytics</div>
+            <div className="col-9"><br/>My Analytics</div>
           </div>
         </div>
         <h2 id="featuredItemHeader">Estee Lauder Companies</h2>

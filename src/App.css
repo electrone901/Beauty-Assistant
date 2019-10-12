@@ -42,6 +42,14 @@
   text-decoration: line-through;
   width: 85px;
   margin-left: 120px;
+
+}
+
+#ribbon {
+  display: inline-block;
+  text-decoration: line-through;
+  width: 85px;
+  /* margin-left: 120px; */
 }
 
 /* #featuredItemHeader {
@@ -109,5 +117,7 @@
 }
 
 .caro {
-  width: 150px;
+  display: inline-block;
+  text-decoration: line-through;
+  width: 85px;
 }
