@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Home from "./component/Home";
+import axios from 'axios';
 import About from "./component/About";
 import ProductInfo from "./component/ProductInfo";
 import Disposal from "./component/Disposal";
